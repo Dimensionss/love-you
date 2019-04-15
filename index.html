@@ -21,60 +21,47 @@
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br/>
-				<span class="space"/><span class="comments">* We are both programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to describe our stories.</span><br />
+				<span class="space"/><span class="comments">* 请耐心看完,</span><br />
+				<span class="space"/><span class="comments">* 这是我想对你说的一些话.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Muyy"</span>);<br />
-				Girl u = <span class="keyword">new</span> Gril(<span class="string">"Poem"</span>);<br />
-				<span class="comments">// Nov 2, 2017, I told you I love you. </span><br />
+				Boy u = <span class="keyword">new</span> Boy(<span class="string">"twh"</span>);<br />
+				Girl i = <span class="keyword">new</span> Gril(<span class="string">"njh"</span>);<br />
+				<span class="comments">// 2018年11月12日，是我们认识的第一天. </span><br />
+				i.meet(u);<br />
+				<span class="comments">// 从一开始就觉得你很亲切.</span><br />
+				<span class="comments">// 我们每天一起上班下班,一起吃饭,越来越熟悉.</span><br/>
+				i.beFamiliarWith(u);<br />
+				<span class="comments">// 不知道从什么时候起,你在我心里占据越来越重要的位置.</span><br />
+				<span class="comments">// 橘子洲看烟花时的怦然心动,我好像开始喜欢你了.</span><br />
 				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
+				<span class="comments">// 喜欢和你一起做饭,一起玩火柴人小游戏.</span><br />
+				<span class="comments">// 因为有你,我来到一个陌生的环境也一点都不孤单,幸好有你.</span><br />
+				<span class="comments">// 我喜欢你,你愿意做我男朋友吗？以后的路我想和你一起走.</span><br />
+				<span class="keyword">boolean</span> isWilling = u.answer();<br />
 				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				<span class="placeholder"/>if(isWilling){<br />
+				<span class="placeholder"/><span class="comments">// 明天记得用一个抱抱领取女朋友一枚哟</span><br />
+				<span class="placeholder"/>together(i,u);<br />
 				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Poem, I have fallen in love with you for
+						唐威豪
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- Muyy</div>
+						和我在一起吧.<br/>
+						<div class="signature">- 聂嘉华</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="https://github.com/MuYunyun/love-you">FlowerPower</a> project.<br />
-			Copyright © 2017 <a href='https://github.com/MuYunyun'>Muyy</a>
 		</div>
 	</div>
 	<script type="text/javascript">
 		let offsetX = $("#loveHeart").width() / 2;
 		let offsetY = $("#loveHeart").height() / 2 - 55;
-		let together = new Date();
-		together.setFullYear(2017, 0, 26); //2017/1/26
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
 		if (!document.createElement('canvas').getContext) {
 			let msg = document.createElement("div");
 			msg.id = "errorMsg";
