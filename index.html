@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Our Love Story</title>
+	<title>Love you</title>
 	<style type="text/css">
 		@font-face {
 			font-family: dight;
@@ -26,7 +26,7 @@
 				<span class="space"/><span class="comments">*/</span><br />
 				Boy u = <span class="keyword">new</span> Boy(<span class="string">"twh"</span>);<br />
 				Girl i = <span class="keyword">new</span> Gril(<span class="string">"njh"</span>);<br />
-				<span class="comments">// 2018年11月12日，是我们认识的第一天. </span><br />
+				<span class="comments">// 2018年11月12日,是我们认识的第一天. </span><br />
 				i.meet(u);<br />
 				<span class="comments">// 从一开始就觉得你很亲切.</span><br />
 				<span class="comments">// 我们每天一起上班下班,一起吃饭,越来越熟悉.</span><br/>
@@ -39,10 +39,11 @@
 				<span class="comments">// 我喜欢你,你愿意做我男朋友吗？以后的路我想和你一起走.</span><br />
 				<span class="keyword">boolean</span> isWilling = u.answer();<br />
 				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/>if(isWilling){<br />
-				<span class="placeholder"/><span class="comments">// 明天记得用一个抱抱领取女朋友一枚哟</span><br />
+				<span class="keyword">if</span>(isWilling){<br />
 				<span class="placeholder"/>together(i,u);<br />
 				}<br />
+				<span class="comments">// 明天记得用一个抱抱领取女朋友一枚哟</span><br />
+				<span class="comments">// 因为有你,所以一切刚刚好.</span><br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -73,7 +74,7 @@
 				startHeartAnimation();
 			}, 5000);
 
-			timeElapse(together);
+			
 
 			adjustCodePosition();
 			$("#code").typewriter(); // 打字效果
